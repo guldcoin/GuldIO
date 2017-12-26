@@ -1,0 +1,199 @@
+/*
+Template Name: GuldIO
+Description: HTML5 / CSS3 One Page
+Version: 0.1
+Author: Chriss Mejía
+Website: https://chrissmejia.com
+*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #353e55;
+    font-weight: 200;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #264175;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #274175;
+    border-color: #3b4a5a;
+}
+
+a {
+    color: #274175;
+}
+
+video#background {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: -80px;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+.navbar {
+    background: #000;
+    opacity: 0.8;
+}
+
+.navbar #logo {
+    width: 5rem;
+}
+
+.header #ico {
+    opacity: 0.9;
+    height: 10rem;
+}
+
+.header #welcome {
+    text-align: center;
+}
+
+.header #welcome #text {
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 400;
+    opacity: 0.9;
+    height: 4rem;
+}
+
+a.nav-link {
+    color: #fff !important;
+    font-weight: 400;
+    text-shadow: 0 0 20px #000000;
+    opacity: 0.8;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #fff;
+    font-weight: 500;
+    opacity: 1;
+}
+
+.section-title h1 {
+    margin: 0 0 3rem 0;
+    text-align: center;
+    font-size: 2.6rem;
+    line-height: 1.2em;
+    font-weight: 300;
+}
+
+.gray-bg {
+    background-color: #f0f1f3;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.container-fluid {
+    padding: 0;
+    margin: -0.4rem 0 0 0;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+.team {
+    text-align: center;
+}
+
+.team .thumbnail {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    margin-bottom: 2rem;
+}
+
+.team .thumbnail a:hover {
+    text-decoration: none;
+}
+
+.team .thumbnail .website {
+    display: none;
+}
+
+.team .thumbnail:hover .website{
+    display: block;
+}
+
+.team .thumbnail .website .title {
+    display: block;
+}
+
+.team .thumbnail:hover .title{
+    display: none;
+}
+
+.team .thumbnail img {
+    object-fit: cover;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.team .thumbnail h3 {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.team .thumbnail h3 small {
+    font-size: 0.8rem;
+    margin: 0.4rem 0;
+    color: #888;
+    display: block;
+    font-weight: normal;
+}
+
+.team .thumbnail h3 a {
+    font-size: 0.6rem;
+    color: #C0C0C0;
+}
+
+.list-group {
+    width: 100%;
+}
+
+.list-group button span {
+    float: right;
+}
+
+.badge-primary {
+    border: #c5c5c5 1px solid;
+    color: #c5c5c5;
+    font-weight: 400;
+    background: none;
+}
+
+#section-contact {
+    text-align: center;
+}
+
+#section-contact form {
+    display: inline-block;
+}
+
+.footer {
+    padding: 2rem 0;
+    font-size: 1rem;
+    color: #888888;
+}
+
+.footer ul {
+    margin: 0;
+    float: right;
+}
+
+.footer .row {
+    margin: 0;
+}
