@@ -26,6 +26,25 @@ a {
     color: #274175;
 }
 
+span.typed-cursor {
+    font-size: 4.4rem;
+    color: #fff;
+    animation: blink-animation 1s steps(3, start) infinite;
+    -webkit-animation: blink-animation 1s steps(3, start) infinite;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
 video#background {
     width: 100%;
     object-fit: cover;
@@ -51,6 +70,8 @@ video#background {
 .header #ico {
     opacity: 0.9;
     height: 10rem;
+    display: block;
+    margin: 0 auto;
 }
 
 .header #welcome {
@@ -64,6 +85,7 @@ video#background {
     font-weight: 400;
     opacity: 0.9;
     height: 4rem;
+    display: inline-block;
 }
 
 a.nav-link {
