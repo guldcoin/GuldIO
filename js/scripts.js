@@ -27,7 +27,7 @@ jQuery(function ($) {
             }
         });
     }());
-
+    
 }); // JQuery end
 
 
