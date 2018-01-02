@@ -93,6 +93,167 @@ video#background {
     display: inline-block;
 }
 
+.header #welcome .btn {
+    color: #ffffff;
+    background-color: initial;
+    border-color: #ffffff;
+}
+
+.seminar-countdown .time {
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    height: 8rem;
+    width: 6rem;
+    -webkit-perspective: 479px;
+    -moz-perspective: 479px;
+    -ms-perspective: 479px;
+    -o-perspective: 479px;
+    perspective: 479px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.seminar-countdown .count {
+    background: #202020;
+    color: #f8f8f8;
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.3em;
+    line-height: 2.4em;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    top: 0;
+    width: 100%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transform-style: flat;
+    -moz-transform-style: flat;
+    -ms-transform-style: flat;
+    -o-transform-style: flat;
+    transform-style: flat;
+}
+
+.seminar-countdown .count.top {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px 5px 0 0;
+    height: 50%;
+    -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+
+.seminar-countdown .count.bottom {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), transparent);
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.1), transparent);
+    background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.1), transparent);
+    background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.1), transparent);
+    background-image: -o-linear-gradient(rgba(255, 255, 255, 0.1), transparent);
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-radius: 0 0 5px 5px;
+    line-height: 0;
+    height: 50%;
+    top: 50%;
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    -o-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+}
+
+.seminar-countdown {
+    color: #fff;
+    font-weight: 400;
+}
+
+.seminar-countdown h1 {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.seminar-countdown .label {
+    font-weight: 500;
+    text-shadow: 0 1px 0 #010101;
+    margin-top: 5px;
+    display: block;
+    position: absolute;
+    top: 9rem;
+    width: 100%;
+    color: #fff;
+}
+
+/* Animation start */
+
+.seminar-countdown .count.curr.top {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    z-index: 3;
+}
+
+.seminar-countdown .count.next.bottom {
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -ms-transform: rotateX(90deg);
+    -o-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    z-index: 2;
+}
+
+/* Animation end */
+
+.seminar-countdown .flip .count.curr.top {
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    -ms-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    -ms-transform: rotateX(-90deg);
+    -o-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+}
+
+.seminar-countdown .flip .count.next.bottom {
+    -webkit-transition: all 250ms ease-in-out 250ms;
+    -moz-transition: all 250ms ease-in-out 250ms;
+    -ms-transition: all 250ms ease-in-out 250ms;
+    -o-transition: all 250ms ease-in-out 250ms;
+    transition: all 250ms ease-in-out 250ms;
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+
 a.nav-link {
     color: #fff !important;
     font-weight: 400;
@@ -148,7 +309,7 @@ section {
     display: none;
 }
 
-.team .thumbnail:hover .website{
+.team .thumbnail:hover .website {
     display: block;
 }
 
@@ -156,7 +317,7 @@ section {
     display: block;
 }
 
-.team .thumbnail:hover .title{
+.team .thumbnail:hover .title {
     display: none;
 }
 
@@ -244,9 +405,9 @@ section {
 
 #section-seminar .schedule ul li .mu-single-event {
     background-color: #fff;
-    -webkit-box-shadow: 0 0 16px 0 rgba(32,32,47,0.16);
-    -moz-box-shadow: 0 0 16px 0 rgba(32,32,47,0.16);
-    box-shadow: 0 0 16px 0 rgba(32,32,47,0.16);
+    -webkit-box-shadow: 0 0 16px 0 rgba(32, 32, 47, 0.16);
+    -moz-box-shadow: 0 0 16px 0 rgba(32, 32, 47, 0.16);
+    box-shadow: 0 0 16px 0 rgba(32, 32, 47, 0.16);
     position: relative;
     top: 0;
     width: 100%;
@@ -323,4 +484,25 @@ section {
 
 .footer .row {
     margin: 0;
+}
+
+@media screen and (max-width: 48em) {
+    .seminar-countdown {
+        width: 100%;
+    }
+    .seminar-countdown .countdown-container {
+        height: 100px;
+    }
+    .seminar-countdown .time {
+        height: 70px;
+        width: 48px;
+    }
+    .seminar-countdown .count {
+        font-size: 1.5em;
+        line-height: 70px;
+    }
+    .seminar-countdown .label {
+        font-size: 0.8em;
+        top: 72px;
+    }
 }
