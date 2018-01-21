@@ -69,7 +69,7 @@ $(document).ready(function () {
 
 $(window).on('load', function () {
     var labels = ['days', 'hours', 'minutes', 'seconds'],
-        nextYear = '2018/01/20 14:00',
+        nextYear = '2018/04/07 14:00',
         template = _.template($('#seminar-countdown-template').html()),
         currDate = '00:00:00:00:00',
         nextDate = '00:00:00:00:00',
