@@ -531,7 +531,8 @@ section {
     animation-iteration-count: 1;
     animation-duration: 8s;
     animation-fill-mode: forwards;
-    background-color: #fff;
+    background-color: #828483;
+    color: white;
     text-align: left;
     margin-right: 44px;
 }
@@ -551,7 +552,7 @@ section {
     position: absolute;
     animation-iteration-count: 1;
     animation-duration: 8s;
-    background-color: #2d67ff;
+    background-color: #3b8fab;
     color: #ffffff;
     animation-fill-mode: forwards;
     text-align: right;
