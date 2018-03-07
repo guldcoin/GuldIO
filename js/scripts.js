@@ -30,8 +30,8 @@ jQuery(function ($) {
 
 }); // JQuery end
 
-var background = document.getElementById('background');
-background.playbackRate = 0.8;
+// var background = document.getElementById('background');
+// background.playbackRate = 0.8;
 
 /*
 var typed3 = new Typed('#text', {
@@ -56,7 +56,7 @@ $(document).ready(function () {
             off_top = 3;
         }
 
-        $('#welcome').css("margin-top", off_top + "px");
+        $('#welcome').css("padding-top", off_top + "px");
         $(".header").height(height);
     }
 

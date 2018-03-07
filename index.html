@@ -35,10 +35,6 @@
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar">
-    <video autoplay loop muted id="background" poster="img/back.jpg">
-        <source src="video/background.mp4" type="video/mp4">
-    </video>
-
     <nav class="navbar sticky-top navbar-expand navbar-light">
         <a class="navbar-brand page-scroll" href="#page-top">
             <img id="logo" src="img/logo.svg" class="img-responsive" alt="Guld">
@@ -52,9 +48,11 @@
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#section-team">Team</a>
                 </li>
+                <!--
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#section-seminar">Seminar</a>
                 </li>
+                -->
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#section-papers">Papers</a>
                 </li>
@@ -67,53 +65,19 @@
 
     <header class="header">
         <div id="welcome">
-            <!--
-            <img id="ico" src="img/ico.svg">
-            <div id="text"></div>
-            -->
-            <div class="seminar-countdown">
-                <h1>
-                    <b>guld</b>OS seminar
-                </h1>
-                <p>
-                    Starting in:
-                </p>
-                <div class="countdown-container" id="seminar-countdown">
-                    <div class="time days flip">
-                        <span class="count curr top">00</span>
-                        <span class="count next top">06</span>
-                        <span class="count next bottom">06</span>
-                        <span class="count curr bottom">00</span>
-                        <span class="label">days</span>
-                    </div>
-
-                    <div class="time hours flip">
-                        <span class="count curr top">00</span>
-                        <span class="count next top">09</span>
-                        <span class="count next bottom">09</span>
-                        <span class="count curr bottom">00</span>
-                        <span class="label">hours</span>
-                    </div>
-
-                    <div class="time minutes flip">
-                        <span class="count curr top">52</span>
-                        <span class="count next top">51</span>
-                        <span class="count next bottom">51</span>
-                        <span class="count curr bottom">52</span>
-                        <span class="label">min</span>
-                    </div>
-
-                    <div class="time seconds flip">
-                        <span class="count curr top">08</span>
-                        <span class="count next top">07</span>
-                        <span class="count next bottom">07</span>
-                        <span class="count curr bottom">08</span>
-                        <span class="label">sec</span>
-                    </div>
+                <div class="text">Introducing Gai</div>
+                <div class="msg-container pv4 ph4 br3 center shadow-6">
+                <div class="msg-content w-100 relative">
+                    <div id="msg1" class="msg msg-receive dib mb4 bg-message br4 pv2 ph3 white measure-narrow">/price BTC</div>
+                    <div id="msg2" class="msg msg-send dib mb4 bg-near-white br4 pv2 ph3 mid-gray measure-narrow">BTC = $11582.00000000</div>
+                    <div id="msg3" class="msg msg-receive dib mb4 bg-message br4 pv2 ph3 white measure-narrow">/bal Daniel</div>
+                    <div id="msg4" class="msg msg-send dib mb4 bg-near-white br4 pv2 ph3 mid-gray measure-narrow">52 GULD Daniel:Assets</div>
+                    <div id="msg5" class="msg msg-receive dib mb4 bg-message br4 pv2 ph3 white measure-narrow">/price GULD</div>
+                    <div id="msg6" class="msg msg-send dib mb4 bg-near-white br4 pv2 ph3 mid-gray measure-narrow">GULD = $50</div>
                 </div>
             </div>
-            <a href="#section-seminar" id="read_seminar" class="btn mx-auto page-scroll">Read more</a>
-
+            <div class="description">Learn how to interact and transfer guld in Telegram</div>
+            <a href="https://guld.chat" class="btn mx-auto">Read more</a>
         </div>
     </header>
 
@@ -249,7 +213,7 @@
             <!-- /.container -->
         </section>
         <!-- .team -->
-
+        <!--
         <section id="section-seminar" class="section-wrapper section-seminar gray-bg">
             <div class="container">
                 <div class="row">
@@ -271,45 +235,43 @@
 
                 <div class="row">
                     <div class="col-md-6 schedule">
-                        <ul>
-                            <li>
-                                <div class="mu-single-event">
-                                    <p class="mu-event-time">Apr 7 / 14:00</p>
-                                    <div class="topic">Intro to free and open source software</div>
-                                    <div class="topic">Crypto basics and tools
-                                        <span>(aes, GnuPG)</span>
-                                    </div>
+                        <div class="seminar-countdown">
+                            <h3 class="text-left">Starting in</h3>
+                            <div class="countdown-container" id="seminar-countdown">
+                                <div class="time days flip">
+                                    <span class="count curr top">00</span>
+                                    <span class="count next top">06</span>
+                                    <span class="count next bottom">06</span>
+                                    <span class="count curr bottom">00</span>
+                                    <span class="label">days</span>
                                 </div>
-                            </li>
-                            <li>
-                                <div class="mu-single-event">
-                                    <p class="mu-event-time">Apr 8 / 14:00</p>
-                                    <div class="topic">Linux kernel and drivers</div>
-                                    <div class="topic">Grub2 boot loader</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="mu-single-event">
-                                    <p class="mu-event-time">Apr 14 / 14:00</p>
-                                    <div class="topic">Linux administration and customization</div>
-                                    <div class="topic">Compiling and installing your own apps
-                                        <span>(why src > bin)</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="mu-single-event">
-                                    <p class="mu-event-time">Apr 15 / 14:00</p>
-                                    <div class="topic">Running full Bitcoin and Dash nodes</div>
-                                    <div class="topic">guldOS tour and 12.5* guld
-                                        <span>($500 worth)</span>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
 
-                    </div>
-                    <div class="col-md-6 details">
+                                <div class="time hours flip">
+                                    <span class="count curr top">00</span>
+                                    <span class="count next top">09</span>
+                                    <span class="count next bottom">09</span>
+                                    <span class="count curr bottom">00</span>
+                                    <span class="label">hours</span>
+                                </div>
+
+                                <div class="time minutes flip">
+                                    <span class="count curr top">52</span>
+                                    <span class="count next top">51</span>
+                                    <span class="count next bottom">51</span>
+                                    <span class="count curr bottom">52</span>
+                                    <span class="label">min</span>
+                                </div>
+
+                                <div class="time seconds flip">
+                                    <span class="count curr top">08</span>
+                                    <span class="count next top">07</span>
+                                    <span class="count next bottom">07</span>
+                                    <span class="count curr bottom">08</span>
+                                    <span class="label">sec</span>
+                                </div>
+                            </div>
+                        </div>
+
                         <h3>Speaker</h3>
                         <figure class="thumbnail">
                             <img src="img/team/ira-miller.jpg" class="img-responsive" alt="Image">
@@ -320,6 +282,9 @@
                             </figcaption>
                         </figure>
 
+
+                    </div>
+                    <div class="col-md-6 details">
                         <h3>Details</h3>
                         <p>
                             <iframe width="100%" height="200" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDVK53ko4FARrF_1RkgGiW7Ds1dP2YBC_w&q=Centro+Comercial+Balboa+Boutiques+Panama+Strip+Mall"
@@ -330,12 +295,12 @@
                             <b>Location:</b> Panama Blockchain Embassy.
                         </p>
                         <p id="investment">
-                            <b>cost:</b> $2000
-                            <span>(We accept USD, BTC, Dash and guld)</span>.
+                            <b>Investment:</b> $2000
+                            <span class="clarify">(We accept USD, BTC, Dash and guld)</span>.
                         </p>
                         <p id="when">
                             <b>When:</b> Apr 7 to 15
-                            <span>(18 hours class)</span>.
+                            <span class="clarify">(18 hours class)</span>.
                         </p>
                         <p>
                             <b>Please notice:</b> New or used laptop with 4GB RAM required.
@@ -356,7 +321,7 @@
             </div>
 
         </section>
-
+    -->
         <section id="section-papers" class="section-wrapper section-papers">
             <div class="container">
                 <div class="row">
