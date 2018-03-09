@@ -511,14 +511,14 @@ section {
 }
 
 :root {
-    --msg-content-height: 22.75rem;
+    --msg-content-height: 16.75rem;
     --msg-spacing: 1rem;
     --msg1-height: 2.5rem;
-    --msg2-height: 3rem;
+    --msg2-height: 2rem;
     --msg3-height: 2.5rem;
-    --msg4-height: 2.5rem;
-    --msg5-height: 4rem;
-    --msg6-height: 3.25rem;
+    --msg4-height: 2rem;
+    --msg5-height: 2rem;
+    --msg6-height: 2.25rem;
 }
 
 .msg {
@@ -534,7 +534,7 @@ section {
     background-color: #828483;
     color: white;
     text-align: left;
-    margin-right: 44px;
+    margin-right: 64px;
 }
 
 .msg-send::after {
@@ -556,7 +556,7 @@ section {
     color: #ffffff;
     animation-fill-mode: forwards;
     text-align: right;
-    margin-left: 44px;
+    margin-left: 64px;
 }
 
 .msg-receive::before {
@@ -571,7 +571,8 @@ section {
 }
 
 .msg-container {
-    width: 28em;
+    width: 100%;
+    max-width: 28em;
     position: relative;
     margin: 0 auto;
 }
