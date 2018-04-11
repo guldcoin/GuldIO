@@ -58,6 +58,7 @@ span.typed-cursor {
 .header {
     width: 100%;
     z-index: 9;
+    margin-top: -4rem;
     background: url("../img/back.png");
 }
 
@@ -103,6 +104,54 @@ span.typed-cursor {
     color: #ffffff;
     background-color: initial;
     border-color: #ffffff;
+}
+
+#social {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#social a {
+    font-size: 1.6rem;
+    width: 3rem;
+    height: 3rem;
+    display: inline-flex;
+    border: 2px #ababab solid;
+    border-radius: 50%;
+    margin: 1rem;
+    padding: 0.6rem;
+    color: #ababab;
+    top: 0;
+    position: relative;
+    animation: social-show 1s;
+    -webkit-animation: social-show 1s;
+}
+
+#social a:hover,
+#social a:active {
+    color: #d1d1d1;
+    border: 2px #d1d1d1 solid;
+}
+
+@keyframes social-show {
+    from {
+        top: 8rem;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+#social #telegram {
+    padding: 0.6rem 0.5rem;
+}
+
+#social #facebook {
+    padding: 0.6rem 0.9rem;
 }
 
 #read_seminar {
