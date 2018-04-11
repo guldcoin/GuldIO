@@ -387,6 +387,11 @@ section {
     background: none;
 }
 
+#section-network img {
+    height: 3rem;
+    margin: 0 2rem 1rem;
+}
+
 #section-contact {
     text-align: center;
 }
