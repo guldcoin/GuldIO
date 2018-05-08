@@ -36,6 +36,8 @@ a {
     color: #274175;
 }
 
+a:hover{text-decoration: none;}
+
 span.typed-cursor {
     font-size: 4.4rem;
     color: #fff;
@@ -438,7 +440,7 @@ section {
 
 #section-network img {
     height: 3rem;
-    margin: 0 2rem 1rem;
+    margin: 3rem;
 }
 
 #section-contact {
@@ -880,6 +882,7 @@ section {
 }
 
 @media screen and (max-width: 48em) {
+	#section-network img {margin: 2rem;}
     #read_seminar {
         margin-top: 3rem;
     }
