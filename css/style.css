@@ -66,7 +66,7 @@ span.typed-cursor {
 
 .navbar {
     background: #000;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .navbar-light .navbar-toggler {
@@ -907,9 +907,6 @@ section {
 }
 
 @media screen and (max-width: 23.4rem) {
-    #navbarNav {
-        display: none !important;
-    }
     .seminar-countdown .time {
         height: 70px;
         width: 48px;
