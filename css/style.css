@@ -42,6 +42,15 @@ a:hover{text-decoration: none;}
 
 .mf{margin-top: 10px;}
 
+pre {
+	padding: 16px;
+	overflow: auto;
+	font-size: 85%;
+	line-height: 1.45;
+	background-color: #f6f8fa;
+	border-radius: 3px;
+}
+
 span.typed-cursor {
     font-size: 4.4rem;
     color: #fff;
