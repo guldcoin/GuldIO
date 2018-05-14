@@ -36,7 +36,14 @@ a {
     color: #274175;
 }
 
+#section-gw a {
+	color: #000;
+	font-weight: bold;
+}
+
 a:hover{text-decoration: none;}
+
+#section-gw a:hover {color: #274175;}
 
 .btn:focus{box-shadow: none;}
 
