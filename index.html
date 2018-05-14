@@ -36,7 +36,7 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar">
 	<nav class="navbar sticky-top navbar-expand-sm navbar-light">
-        <a class="navbar-brand page-scroll" href="#page-top">
+        <a class="navbar-brand" href="#page-top">
             <img id="logo" src="img/logo.svg" class="img-responsive" alt="Guld">
         </a>
 	   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,56 +45,29 @@
   		<div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#section-team">Team</a>
+                    <a class="nav-link" href="#section-gw">Guld Wallet</a>
+                </li>	            
+                <li class="nav-item">
+                    <a class="nav-link" href="#section-team">Team</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#section-network">Network</a>
+                    <a class="nav-link" href="#section-network">Network</a>
                 </li>
                 <!--
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#section-seminar">Seminar</a>
+                    <a class="nav-link" href="#section-seminar">Seminar</a>
                 </li>
                 -->
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#section-papers">Papers</a>
+                    <a class="nav-link" href="#section-papers">Papers</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#section-contact">Contact</a>
+                    <a class="nav-link" href="#section-contact">Contact</a>
                 </li>
             </ul>
   		</div>
 	</nav>
 
-<!--
-    <header class="header">
-        <div id="welcome">
-            <div class="text">Introducing Gai</div>
-            <div class="msg-container pv4 ph4 br3 center shadow-6">
-                <div class="msg-content w-100 relative">
-                    <div id="msg1" class="msg msg-receive dib mb4 bg-message br4 pv2 ph3 white measure-narrow">/price BTC</div>
-                    <div id="msg2" class="msg msg-send dib mb4 bg-near-white br4 pv2 ph3 mid-gray measure-narrow">BTC = $6827.70000000</div>
-                    <div id="msg3" class="msg msg-receive dib mb4 bg-message br4 pv2 ph3 white measure-narrow">/bal Daniel</div>
-                    <div id="msg4" class="msg msg-send dib mb4 bg-near-white br4 pv2 ph3 mid-gray measure-narrow">52 GULD Daniel:Assets</div>
-                    <div id="msg5" class="msg msg-receive dib mb4 bg-message br4 pv2 ph3 white measure-narrow">/price GULD</div>
-                    <div id="msg6" class="msg msg-send dib mb4 bg-near-white br4 pv2 ph3 mid-gray measure-narrow">GULD = $75</div>
-                </div>
-            </div>
-            <div class="description">Learn how to interact and transfer guld in Telegram</div>
-            <a href="https://guld.chat" class="btn mx-auto" target="_blank">Read more</a>
-        </div>
-        <div id="social">
-            <a id="telegram" target="_blank" href="https://t.me/guldblocktree">
-                <i class="fab fa-telegram-plane"></i>
-            </a>
-            <a id="facebook" target="_blank" href="https://www.facebook.com/guldblocktree">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a id="twitter" target="_blank" href="https://twitter.com/guldcoin">
-                <i class="fab fa-twitter"></i>
-            </a>
-        </div>
-    </header>
--->
     <header class="header">
         <div id="welcome">
             <div class="text">Introducing Our Guld Wallet!</div>
@@ -103,7 +76,7 @@
 			<img class="img-responsive" src="img/logo.svg">
             </div>
             <div class="description">Install the Guld Wallet</div>
-            <a href="#guldwallet" class="btn mx-auto">Install</a>
+            <a href="#section-gw" class="btn mx-auto">Install</a>
         </div>
         <div id="social">
             <a id="telegram" target="_blank" href="https://t.me/guldblocktree">
@@ -118,6 +91,63 @@
         </div>
     </header>
     <div class="container-fluid">
+
+        <section id="section-gw" class="section-wrapper gray-bg mf">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title">
+                            <h1>Guld Wallet</h1>
+                        </div>
+                    </div>
+                </div>
+				  <div id="about" class="row">
+					<div class="col-md-12">
+						<h2>Installation Instructions</h2><br>
+
+						<h4>Before you install</h4><br>
+
+						<p>Currently, these extensions run only on the following operating systems:</p>
+						<ul>
+							<li>macOS (10.12.x or later)</li>
+							<li>Linux (kernel xxx or later, Ubuntu/Mint/Gentoo recommended)</li>
+							<li>Windows (7 or later)</li><br>
+						</ul>
+						
+						<p>In addition, you'll need:</p>
+						<ul>
+							<li><a href="https://www.python.org/downloads" target="_blank">Python 2.7 or later</a></li>
+							<li><a href="https://www.google.com/chrome" target="_blank">Chrome</a></li>
+							<li>or Chromium</li>
+							<a href="https://chromium.woolyss.com/download/#mac" target="_blank">Mac</a>
+							<a href="https://chromium.woolyss.com/download/#linux" target="_blank">Linux</a>  							
+							<a href="https://chromium.woolyss.com/download/#windows" target="_blank">Windows</a>
+							<li>an Internet connection</li>
+						</ul><br>
+						
+						<h4>Installation</h4><br>
+						
+						<p>Once your system meets the minimum requirements, you can install the various components: the <code>ledger-cli</code> application, our <code>ledger-native</code> bindings, and finally the Chrome extensions themselves.</p>
+						
+						<h5>Installing ledger-cli</h5><br>
+
+						<p>The first package you need to install is <code>ledger-cli</code>, the command-line based accounting system. This allows the extensions to interact with the Guld ledger.</p>
+
+						<h5>On macOS</h5>
+
+						<p>Using the <a href="https://docs.brew.sh/Installation" target="_blank">Brew</a> package manager, run the following command from a <code>Terminal</code> window:</p>
+						
+						<pre><code>brew install ledger</code></pre>
+						
+						<h5>On Linux</h5>
+
+						<p>The <a href="https://www.ledger-cli.org/download.html" target="_blank">ledger download page</a> has links to <code>ledger</code> versions for several linux distributions.</p>
+
+						<p><strong>*</strong> We only support ledger 3.1.1 and later. As of this writing, the <strong>Slackware</strong>, <strong>CentOS</strong>, and <strong>OpenSUSE</strong> packages were out of date, and may not work correctly with our extensions.</p>
+					</div>
+	            </div>
+            </div><!-- /.container -->
+        </section><!-- /.section-gw -->
 
         <section id="section-team" class="section-wrapper team">
             <div class="container">
@@ -482,29 +512,20 @@
 
     <!-- jquery -->
     <script src="js/jquery-2.1.4.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
-
-    <script src="js/scripts.js"></script>
-
+    <script src="js/script.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114107562-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-
         function gtag() {
             dataLayer.push(arguments);
         }
         gtag('js', new Date());
-
         gtag('config', 'UA-114107562-1');
     </script>
 </body>
-
 </html>

@@ -38,6 +38,10 @@ a {
 
 a:hover{text-decoration: none;}
 
+.btn:focus{box-shadow: none;}
+
+.mf{margin-top: 10px;}
+
 span.typed-cursor {
     font-size: 4.4rem;
     color: #fff;
