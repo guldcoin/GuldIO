@@ -2,7 +2,7 @@ jQuery(function ($) {
 
     'use strict';
     // --------------------------------------------------------------------
-    // jQuery one page scrolling
+    // jQuery One Page Scrolling & Link Handling
     // --------------------------------------------------------------------
 
     (function () {
@@ -20,6 +20,10 @@ jQuery(function ($) {
 		        }
 		    }
 		});
+		// Open all external links in new window 
+		$('a').filter(function () {return this.hostname != window.location.hostname;}).attr('target', '_blank');
+		// No event for empty links
+		$('a[href=#]').on('click', function(){return false;});			
     }());
 
     // --------------------------------------------------------------------
