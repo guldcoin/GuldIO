@@ -50,12 +50,19 @@ a:hover{text-decoration: none;}
 .mf{margin-top: 10px;}
 
 pre {
-	padding: 16px;
-	overflow: auto;
-	font-size: 85%;
-	line-height: 1.45;
-	background-color: #f6f8fa;
-	border-radius: 3px;
+	background-color: #f7f7f7;
+	box-shadow: 0 2px 4px rgba(0,0,0,.15),0 0 3px rgba(0,0,0,.15);
+	padding: .99em;
+	overflow-x: auto;
+	white-space: pre;
+	font-size: .95em;
+	line-height: 1.8em;
+}
+
+
+code{
+	background-color: #f7f7f7;
+	padding: .2em;	
 }
 
 span.typed-cursor {
