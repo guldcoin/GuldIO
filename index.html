@@ -144,6 +144,46 @@
 						<p>The <a href="https://www.ledger-cli.org/download.html" target="_blank">ledger download page</a> has links to <code>ledger</code> versions for several linux distributions.</p>
 
 						<p><strong>*</strong> We only support ledger 3.1.1 and later. As of this writing, the <strong>Slackware</strong>, <strong>CentOS</strong>, and <strong>OpenSUSE</strong> packages were out of date, and may not work correctly with our extensions.</p>
+					
+						<br><h5>On Windows</h5><br>
+
+						<p>Download and unzip <a href="https://github.com/AlexanderAA/ledger_binaries_windows/raw/master/ledger_3.1.1_win_bin.zip">ledger_3.1.1_win_bin.zip</a>.</p>
+					
+						<br><h4>Installing the ledger-native bindings</h4><br>
+
+						<p>The <code>ledger-native</code> bindings allow the extensions to interact with the <code>ledger-cli</code> application. The bindings are necessary as browser-based extensions cannot interact directly with command lines.</p>
+					
+						<br><h5>On macOS and Linux</h5><br>
+
+						<p>To install the ledger-native bindings on macOS or Linux:</p>
+					
+					<ol>
+						<li>Download (or clone, if you're handy with <code>git</code>) the <a href="https://github.com/guldcoin/ledger-native">ledger-native</a> repository into your home directory, or another location if you'd prefer.</li>
+
+						<br><p><strong>*</strong> The next step assumes you placed the ledger-native files into your home directory. Adjust accordingly if you placed them elsewhere.</p><br>
+
+						<li>Open a shell window (such as Terminal on macOS) and issue the following commands:</li>
+
+						<br><pre>cd ledger-native
+./install_host.sh
+						</pre><br>
+
+						<li>To uninstall the host, run <code>./uninstall_host.sh</code></li>
+					</ol>
+
+						<br><h5>On Windows</h5><br>
+
+						<p>To install the ledger-native bindings on Windows:</p>
+					
+					<ol>
+						<li>Download (or clone, if you're handy with <code>git</code>) the <a href="https://github.com/guldcoin/ledger-native">ledger-native</a> repository into your home directory, or another location if you'd prefer.</li>
+
+						<br><li>In an Explorer window, navigate to the <code>ledger-native</code> folder.</li>
+
+						<br><li>Double-click the <code>install_host.bat</code> script to run it.</li>
+
+						<br><li>This script installs the native messaging host for the current user, by creating a registry key called <code>HKEY_CURRENT_USER\SOFTWARE\Google\Chrome\NativeMessagingHosts\com.guld.ledger</code> and setting its value to the full path to <code>com.guld.ledger-win.json</code>.</li>
+					</ol>						
 					</div>
 	            </div>
             </div><!-- /.container -->
