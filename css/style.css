@@ -45,6 +45,8 @@ a:hover{text-decoration: none;}
 
 #section-gw a:hover {color: #274175;}
 
+.btn:hover{cursor: pointer;}
+
 .btn:focus{box-shadow: none;}
 
 .mf{margin-top: 10px;}
