@@ -90,11 +90,16 @@ span.typed-cursor {
     width: 100%;
     z-index: 9;
     margin-top: -4rem;
-    background: url("../img/back.png");
+    background: url("../img/bg.png");
+}
+
+.guld{    
+	height: 10rem;
+    margin: 2rem 0 1.4rem;
 }
 
 .navbar {
-    background: #000;
+    background: url("../img/bg.png");
 }
 
 .navbar-light .navbar-toggler {
