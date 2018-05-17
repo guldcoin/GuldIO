@@ -17,12 +17,6 @@ jQuery(function ($) {
 		        }
 		    }
 		});
-		
-		// Full screen header
-		$('.header').css('height', $(window).height());	
-		$(window).resize(function(){
-			$('.header').css('height', $(window).height());
-		});	
 				
 		// Open all external links in new window 
 		$('a').filter(function () {return this.hostname != window.location.hostname;}).attr('target', '_blank');
