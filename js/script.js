@@ -18,6 +18,12 @@ jQuery(function ($) {
 		    }
 		});
 		
+		// Full screen header
+		$('.header').css('height', $(window).height());	
+		$(window).resize(function(){
+			$('.header').css('height', $(window).height());
+		});	
+				
 		// Open all external links in new window 
 		$('a').filter(function () {return this.hostname != window.location.hostname;}).attr('target', '_blank');
 		
@@ -32,7 +38,6 @@ jQuery(function ($) {
 		});
 
 }); // JQuery end
-
 // var background = document.getElementById('background');
 // background.playbackRate = 0.8;
 
