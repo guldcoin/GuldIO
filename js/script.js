@@ -52,27 +52,3 @@ var typed3 = new Typed('#text', {
     loop: false
 });
 */
-
-$(document).ready(function () {
-    function welcomeCenter() {
-        var height = $(window).height();
-        var welcome = $('#welcome').outerHeight();
-        $('#background').height(height);
-
-        var free_space = height - welcome //- (welcome + 140);  // menu adjustment
-        free_space = free_space - (free_space * 0.1) // 0.1 of adjust to top
-        var off_top = (free_space / 2);
-        if (off_top < 1) {
-            off_top = 3;
-        }
-
-        $('#welcome').css("padding-top", off_top + "px");
-        $(".header").height(height);
-    }
-
-    $(window).resize(function () {
-        welcomeCenter();
-    });
-
-    $(window).resize();
-});
