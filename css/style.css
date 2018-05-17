@@ -121,7 +121,7 @@ span.typed-cursor {
 
 .header .text {
     color: #fff;
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
@@ -878,7 +878,6 @@ section {
 }
 
 @media screen and (max-width: 28rem) {
-	.header .text{font-size: 2.5rem;}
     .badge {
         display: none !important;
     }
