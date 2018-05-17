@@ -901,25 +901,31 @@ section {
 }
 
 @media screen and (max-width: 28rem) {
+    .header .text {
+        font-size: 2rem;
+    }
+    .header .description {
+        font-size: 1rem;
+    }
+    .section-title h1 {
+        font-size: 2rem;
+        margin: 0 0 2rem 0;
+    }
+    #team {
+        margin-bottom: -3rem;
+    }
     .badge {
         display: none !important;
+    }
+    #section-network img {
+        margin: 0 2rem 3rem;
+        width: 8rem;
+        height: auto;
     }
 }
 
 @media screen and (max-width: 23.4rem) {
     #navbarNav {
         display: none !important;
-    }
-    .seminar-countdown .time {
-        height: 70px;
-        width: 48px;
-    }
-    .seminar-countdown .count {
-        font-size: 1.5em;
-        line-height: 70px;
-    }
-    .seminar-countdown .label {
-        font-size: 0.8em;
-        top: 72px;
     }
 }
