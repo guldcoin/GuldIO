@@ -91,7 +91,7 @@ span.typed-cursor {
     width: 100%;
     z-index: 9;
     margin-top: -4rem;
-    background: url("../img/bg.png");
+    background: url("../img/bg.png") no-repeat center center fixed;
     background-color: #000;
 }
 
@@ -101,7 +101,7 @@ span.typed-cursor {
 }
 
 .navbar {
-    background: url("../img/bg.png");
+    background: url("../img/bg.png") no-repeat center center fixed;
 }
 
 .navbar-light .navbar-toggler {
