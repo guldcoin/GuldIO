@@ -12,12 +12,7 @@ body {
     font-weight: 300;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
     color: #264175;
     font-weight: 300;
 }
@@ -74,12 +69,6 @@ span.typed-cursor {
 }
 
 @keyframes blink-animation {
-    to {
-        visibility: hidden;
-    }
-}
-
-@-webkit-keyframes blink-animation {
     to {
         visibility: hidden;
     }
@@ -281,7 +270,6 @@ span.typed-cursor {
 }
 
 /* Animation start */
-
 .seminar-countdown .count.curr.top {
     transform: rotateX(0deg);
     z-index: 3;
@@ -293,7 +281,6 @@ span.typed-cursor {
 }
 
 /* Animation end */
-
 .seminar-countdown .flip .count.curr.top {
     transition: all 250ms ease-in-out;
     transform: rotateX(-90deg);
