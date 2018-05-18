@@ -5,7 +5,6 @@ Version: 1.0
 Author: Chriss Mejía & Rio Myers
 Website: https://chrissmejia.com & https://riomyers.com
 */
-
 body {
     font-family: 'Roboto', sans-serif;
     color: #353e55;
@@ -865,8 +864,26 @@ section {
 }
 
 @media screen and (max-width: 28rem) {
+    .header .text {
+        font-size: 2rem;
+    }
+    .header .description {
+        font-size: 1rem;
+    }
+    .section-title h1 {
+        font-size: 2rem;
+        margin: 0 0 2rem 0;
+    }
+    #team {
+        margin-bottom: -3rem;
+    }
     .badge {
         display: none !important;
+    }
+    #section-network img {
+        margin: 0 2rem 3rem;
+        width: 8rem;
+        height: auto;
     }
 }
 
@@ -882,5 +899,4 @@ section {
     .seminar-countdown .label {
         font-size: 0.8em;
         top: 72px;
-    }
 }
