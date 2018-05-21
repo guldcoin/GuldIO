@@ -22,7 +22,7 @@ jQuery(function ($) {
 		$('a').filter(function () {return this.hostname != window.location.hostname;}).attr('target', '_blank');
 		
 		// No event for empty links
-		$('a[href=#]').on('click', function(){return false;});	
+		$('a[href=#]').on('click', function(){return false;});
 			
     // --------------------------------------------------------------------
     // Closes the Responsive Menu on Menu Item Click
