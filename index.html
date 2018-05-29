@@ -131,7 +131,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-title">
-                            <h1>Setup the Guld Wallet</h1>
+                            <h1>Guld Wallet</h1>
                         </div>
                     </div>
                 </div>
@@ -162,7 +162,7 @@
 						
 						<h4>Installation</h4><br>
 						
-						<p>Once your system meets the minimum requirements, you can install the various components: the <code>ledger-cli</code> application, our <code>ledger-native</code> bindings, and finally the Chrome extensions themselves.</p>
+						<p>Once your system meets the minimum requirements, you can install the various components: the <code>ledger-cli</code> application, our <code>ledger-native</code> bindings, and finally the Chrome extension.</p>
 						
 						<br><h4>Installing ledger-cli</h4><br>
 
@@ -214,13 +214,78 @@
 
 							<br><li>In an Explorer window, navigate to the <code>ledger-native</code> folder.</li>
 
-						<br><li>Double-click the <code>install_host.bat</code> script to install the native messaging host for the current Windows user.</li>
+							<br><li>Double-click the <code>install_host.bat</code> script to install the native messaging host for the current Windows user.</li>
 					</ol>
 					
 					<br><h4>Install the Guld Wallet Extension</h4><br>
 					
-					<button type="button" class="btn btn-outline-primary" onclick="chrome.webstore.install()">Add to Chrome</button>
-										
+						<p>The extension will soon be available from the Chrome Web Store.</p>
+					
+						<button type="button" class="btn btn-outline-primary" onclick="chrome.webstore.install()">Add to Chrome</button><br><br>
+					
+						<p>To install the extension directly from a Github repository, download <a href="https://github.com/guldcoin/guld-chrome/archive/master.zip">guld-chrome</a> or run <code>git clone https://github.com/guldcoin/guld-chrome.git</code> to clone the repository.</p> 
+					
+						<p>Then, in your browser:</p>
+					
+						<ol>
+							<li>Navigate to <a href="chrome://extensions">chrome://extensions</a>.</li>
+
+							<li>Turn on the Developer Mode switch in the upper-right corner.</li>
+
+							<li>Click the <code>Load Unpacked</code> button.</li>
+
+							<li>Navigate to the location you downloaded or cloned the repository, and click Select.</li>
+						</ol>
+
+						<p>The Guld Wallet extension's icon will show up on the Chrome toolbar, with a "WAIT" overlay. After a few minutes, the extension will finish its initial setup, and will be ready to use. The Guld Games extension is ready to use as soon as it's installed.</p>					
+
+					<br><h4>Setting up Guld Wallet</h4><br>
+					
+						<p>Once the extension has finished its initial setup, the "WAIT" overlay on its icon will disappear.</p>
+
+						<p>Click the Guld Wallet icon on the Chrome toolbar to open the interface in a new tab. You'll be prompted to enter your GitHub credentials.</p>
+
+						<p><strong>*A GitHub account is required to use Guld Wallet. If you don't log into your account, the extension will not work.</strong></p>
+
+						<p>On the welcome screen, you can either <strong>generate</strong> a Guld identity, or <strong>import</strong> an existing identity. Identities are tied to PGP keys, so this step is actually generating a (or importing an existing, in the case of existing Guld users) PGP key.</p>
+
+						<p>To <strong>generate a new Guld identity</strong> and PGP key:</p>
+						<ol>
+							<li>Select the "generate" radio button.</li>
+
+							<li>Choose a Guld username.</li>
+
+							<span style="color:red;">**Need guidelines on usernames.**</span>
+
+							<li>Optionally, enter your name.</li>
+
+							<li>Enter your email address.</li>
+							<span>Note that this email address will be publicly available in the ledger. Don't use an address you don't want to be made public.</span>
+
+							<li>Enter a strong passphrase for the new PGP key, and confirm it.</li>
+							<span>Keep your passphrase stored securely. There is no way to recover a lost passphrase.</span>
+
+							<li>Click <strong>Create</strong> to create your new Guld identity and PGP key.</li>
+						</ol>	
+
+						<p>To <strong>import an existing Guld identity</strong> and PGP key:</p>
+							
+						<ol>
+							<li>Select the "import" radio button.</li>
+
+							<li>Export the private key you used to register your Guld Identity from your preferred PGP key manager.</li>
+
+							<li>Copy and paste the exported private key into the "ASCII Armored Private Key" box.</li>
+
+							<li>Enter your existing Guld username.</li>
+
+							<li>Enter the passphrase for the private PGP key.</li>
+
+							<li>Click <strong>Import</strong> to import your private key and Guld Identity</li>
+						</ol>
+						
+						<span><strong>*</strong>If you get an error when trying to use your existing Guld username, check the "Expert Mode" box and try the import again.</span>					
+														
 					</div>
 	            </div>
             </div><!-- /.container -->
