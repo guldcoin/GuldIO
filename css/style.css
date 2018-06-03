@@ -29,16 +29,15 @@ h3 {
 a {
     color: #274175;
 }
-a:hover{text-decoration: none;}
 
 #section-gw a {
 	color: #000;
 	font-weight: bold;
 }
 
-#section-gw a:hover {color: #274175;}
+a:hover{text-decoration: none;}
 
-#section-gw span{color: darkblue;}
+#section-gw a:hover {color: #274175;}
 
 .btn:hover{cursor: pointer;}
 
