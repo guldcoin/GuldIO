@@ -1,17 +1,23 @@
 /*
 Template Name: GuldIO
 Description: HTML5 / CSS3 One Page
-Version: 1.0
-Author: Chriss Mejía & Rio Myers
-Website: https://chrissmejia.com & https://riomyers.com
+Version: 0.1
+Author: Chriss Mejía
+Website: https://chrissmejia.com
 */
+
 body {
     font-family: 'Roboto', sans-serif;
     color: #353e55;
     font-weight: 300;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: #264175;
     font-weight: 300;
 }
@@ -30,41 +36,13 @@ a {
     color: #274175;
 }
 
-#section-gw a {
-	color: #000;
-	font-weight: bold;
-}
-
 a:hover{text-decoration: none;}
-
-#section-gw a:hover {color: #274175;}
-
-.btn:hover{cursor: pointer;}
-
-.btn:focus{box-shadow: none;}
-
-.mf{margin-top: 10px;}
-
-pre {
-	background-color: #f7f7f7;
-	box-shadow: 0 2px 4px rgba(0,0,0,.15),0 0 3px rgba(0,0,0,.15);
-	padding: .99em;
-	overflow-x: auto;
-	white-space: pre;
-	font-size: .95em;
-	line-height: 1.8em;
-}
-
-
-code{
-	background-color: #f7f7f7;
-	padding: .2em;	
-}
 
 span.typed-cursor {
     font-size: 4.4rem;
     color: #fff;
     animation: blink-animation 1s steps(3, start) infinite;
+    -webkit-animation: blink-animation 1s steps(3, start) infinite;
 }
 
 @keyframes blink-animation {
@@ -73,23 +51,22 @@ span.typed-cursor {
     }
 }
 
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
 .header {
-	height: 100vh;
-	min-height: 100%;
     width: 100%;
     z-index: 9;
     margin-top: -4rem;
-    background: url("../img/bg.png") no-repeat center center fixed;
-    background-color: #000;
-}
-
-.guld{    
-	height: 10rem;
-    margin: 2rem 0 1.4rem;
+    background: url("../img/back.png");
 }
 
 .navbar {
-    background: url("../img/bg.png") no-repeat center center fixed;
+    background: #000;
+    opacity: 0.8;
 }
 
 .navbar-light .navbar-toggler {
@@ -109,7 +86,7 @@ span.typed-cursor {
 
 .header .text {
     color: #fff;
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 2rem;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
@@ -122,10 +99,6 @@ span.typed-cursor {
 }
 
 .header #welcome {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);	
     text-align: center;
 }
 
@@ -155,6 +128,7 @@ span.typed-cursor {
     top: 0;
     position: relative;
     animation: social-show 1s;
+    -webkit-animation: social-show 1s;
 }
 
 #social a:hover,
@@ -204,9 +178,25 @@ span.typed-cursor {
     position: relative;
     height: 8rem;
     width: 6rem;
+    -webkit-perspective: 479px;
+    -moz-perspective: 479px;
+    -ms-perspective: 479px;
+    -o-perspective: 479px;
     perspective: 479px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
     backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
     transform: translateZ(0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
 
@@ -223,7 +213,15 @@ span.typed-cursor {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     top: 0;
     width: 100%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
     transform: translateZ(0);
+    -webkit-transform-style: flat;
+    -moz-transform-style: flat;
+    -ms-transform-style: flat;
+    -o-transform-style: flat;
     transform-style: flat;
 }
 
@@ -232,17 +230,29 @@ span.typed-cursor {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 5px 5px 0 0;
     height: 50%;
+    -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
     transform-origin: 50% 100%;
 }
 
 .seminar-countdown .count.bottom {
     background-image: linear-gradient(rgba(255, 255, 255, 0.1), transparent);
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.1), transparent);
+    background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.1), transparent);
+    background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.1), transparent);
+    background-image: -o-linear-gradient(rgba(255, 255, 255, 0.1), transparent);
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     border-radius: 0 0 5px 5px;
     line-height: 0;
     height: 50%;
     top: 50%;
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    -o-transform-origin: 50% 0;
     transform-origin: 50% 0;
 }
 
@@ -269,24 +279,50 @@ span.typed-cursor {
 }
 
 /* Animation start */
+
 .seminar-countdown .count.curr.top {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
     transform: rotateX(0deg);
     z-index: 3;
 }
 
 .seminar-countdown .count.next.bottom {
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -ms-transform: rotateX(90deg);
+    -o-transform: rotateX(90deg);
     transform: rotateX(90deg);
     z-index: 2;
 }
 
 /* Animation end */
+
 .seminar-countdown .flip .count.curr.top {
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    -ms-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
     transition: all 250ms ease-in-out;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    -ms-transform: rotateX(-90deg);
+    -o-transform: rotateX(-90deg);
     transform: rotateX(-90deg);
 }
 
 .seminar-countdown .flip .count.next.bottom {
+    -webkit-transition: all 250ms ease-in-out 250ms;
+    -moz-transition: all 250ms ease-in-out 250ms;
+    -ms-transition: all 250ms ease-in-out 250ms;
+    -o-transition: all 250ms ease-in-out 250ms;
     transition: all 250ms ease-in-out 250ms;
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
     transform: rotateX(0deg);
 }
 
@@ -389,7 +425,6 @@ section {
 
 .list-group {
     width: 100%;
-    padding: 0 1rem;
 }
 
 .list-group button span {
@@ -450,6 +485,8 @@ section {
 
 #section-seminar .schedule ul li .mu-single-event {
     background-color: #fff;
+    -webkit-box-shadow: 0 0 16px 0 rgba(32, 32, 47, 0.16);
+    -moz-box-shadow: 0 0 16px 0 rgba(32, 32, 47, 0.16);
     box-shadow: 0 0 16px 0 rgba(32, 32, 47, 0.16);
     position: relative;
     top: 0;
@@ -888,15 +925,7 @@ section {
 }
 
 @media screen and (max-width: 23.4rem) {
-    .seminar-countdown .time {
-        height: 70px;
-        width: 48px;
+    #navbarNav {
+        display: none !important;
     }
-    .seminar-countdown .count {
-        font-size: 1.5em;
-        line-height: 70px;
-    }
-    .seminar-countdown .label {
-        font-size: 0.8em;
-        top: 72px;
 }
