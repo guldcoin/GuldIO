@@ -1,6 +1,5 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,57 +14,63 @@
 
     <!-- favicon -->
     <link rel="icon" href="img/favicon.png">
+ 	<meta name="theme-color" content="#000000">   
 
     <!-- web-fonts -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,500' rel='stylesheet' type='text/css'>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
-        crossorigin="anonymous">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
-    <!-- Style CSS -->
+    <!-- style css -->
     <link href="css/style.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- HTML5 shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+	<!-- chrome app -->
+	<!-- <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/fggohbjlmjldccoelobkepngbkkebefi"> -->
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar">
-    <nav class="navbar sticky-top navbar-expand navbar-light">
-        <a class="navbar-brand page-scroll" href="#page-top">
+<body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="70">
+	<nav class="navbar sticky-top navbar-expand-sm navbar-light">
+        <a class="navbar-brand" href="#page-top">
             <img id="logo" src="img/logo.svg" class="img-responsive" alt="Guld">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+	   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	   </button>
+  		<div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#section-team">Team</a>
+                    <a class="nav-link" href="#section-gw">Guld Wallet</a>
+                </li>	            
+                <li class="nav-item">
+                    <a class="nav-link" href="#section-team">Team</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#section-network">Network</a>
+                    <a class="nav-link" href="#section-network">Network</a>
                 </li>
                 <!--
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#section-seminar">Seminar</a>
+                    <a class="nav-link" href="#section-seminar">Seminar</a>
                 </li>
                 -->
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#section-papers">Papers</a>
+                    <a class="nav-link" href="#section-papers">Papers</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#section-contact">Contact</a>
+                    <a class="nav-link" href="#section-contact">Contact</a>
                 </li>
             </ul>
-        </div>
-    </nav>
+  		</div>
+	</nav>
 
+<!--
     <header class="header">
         <div id="welcome">
             <div class="text">Introducing Gai</div>
@@ -80,13 +85,13 @@
                 </div>
             </div>
             <div class="description">Learn how to interact and transfer guld in Telegram</div>
-            <a href="https://guld.chat" class="btn mx-auto">Read more</a>
+            <a href="https://guld.chat" class="btn mx-auto" target="_blank">Read more</a>
         </div>
         <div id="social">
             <a id="telegram" target="_blank" href="https://t.me/guldblocktree">
                 <i class="fab fa-telegram-plane"></i>
             </a>
-            <a id="facebook" target="_blank" href="https://www.facebook.com/guldblocktree/">
+            <a id="facebook" target="_blank" href="https://www.facebook.com/guldblocktree">
                 <i class="fab fa-facebook-f"></i>
             </a>
             <a id="twitter" target="_blank" href="https://twitter.com/guldcoin">
@@ -94,8 +99,194 @@
             </a>
         </div>
     </header>
+-->
 
+    <header class="header">
+        <div id="welcome">
+            <div class="text">Introducing the Guld Wallet!</div>
+            <div class="center">
+
+			<img class="guld" src="img/guld.svg" alt="Guld">
+            </div>
+            <div class="description"></div>
+            <a href="#section-gw" class="btn mx-auto">Learn More</a>
+        </div>
+        <div id="social">
+            <a id="telegram" href="https://t.me/guldblocktree">
+                <i class="fab fa-telegram-plane"></i>
+            </a>
+            <a id="facebook" href="https://www.facebook.com/guldblocktree">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a id="twitter" href="https://twitter.com/guldcoin">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+    </header>    
+    
     <div class="container-fluid">
+
+        <section id="section-gw" class="section-wrapper gray-bg mf">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title">
+                            <h1>Guld Wallet</h1>
+                        </div>
+                    </div>
+                </div>
+				  <div id="about" class="row">
+					<div class="col-md-12">
+						<h2>Installation Instructions</h2><br>
+
+						<h4>Before you install</h4><br>
+
+						<p>Currently, this extension runs only on the following operating systems:</p>
+						<ul>
+							<li>macOS (10.12.x or later)</li>
+							<li>Linux (Ubuntu/Mint/Gentoo recommended)</li>
+							<li>Windows (7 or later)</li><br>
+						</ul>
+						
+						<p>In addition, you'll need:</p>
+						<ul>
+							<li><a href="https://www.python.org/downloads">Python 2.7 or later</a></li>
+							<li><a href="https://www.google.com/chrome">Chrome</a></li>
+							<li>or Chromium
+								<a href="https://chromium.woolyss.com/download/#mac">Mac</a>
+								<a href="https://chromium.woolyss.com/download/#linux">Linux</a>  							
+								<a href="https://chromium.woolyss.com/download/#windows">Windows</a>
+							</li>
+							<li>an Internet connection</li>
+						</ul><br>
+						
+						<h4>Installation</h4><br>
+						
+						<p>Once your system meets the minimum requirements, you can install the various components: the <code>ledger-cli</code> application, our <code>ledger-native</code> bindings, and finally the Chrome extension.</p>
+						
+						<br><h4>Installing ledger-cli</h4><br>
+
+						<p>The first package you need to install is <code>ledger-cli</code>, the command-line based accounting system. This allows the extensions to interact with the Guld ledger.</p>
+
+						<br><h5>On macOS</h5><br>
+
+						<p>Using the <a href="https://brew.sh">Brew</a> package manager, run the following command from a <code>Terminal</code> window:</p>
+						
+						<pre>brew install ledger</pre>
+						
+						<br><h5>On Linux</h5><br>
+
+						<p>The <a href="https://www.ledger-cli.org/download.html">ledger download page</a> has links to <code>ledger</code> versions for several linux distributions.</p>
+
+						<p><strong>*</strong> We only support ledger 3.1.1 and later. As of this writing, the <strong>Slackware</strong>, <strong>CentOS</strong>, and <strong>OpenSUSE</strong> packages were out of date, and may not work correctly with our extensions.</p>
+					
+						<br><h5>On Windows</h5><br>
+
+						<p>Download and unzip <a href="https://github.com/AlexanderAA/ledger_binaries_windows/raw/master/ledger_3.1.1_win_bin.zip">ledger_3.1.1_win_bin.zip</a>.</p>
+					
+						<br><h4>Installing the ledger-native bindings</h4><br>
+
+						<p>The <code>ledger-native</code> bindings allow the extensions to interact with the <code>ledger-cli</code> application. The bindings are necessary as browser-based extensions cannot interact directly with command lines.</p>
+					
+						<br><h5>On macOS and Linux</h5><br>
+
+						<p>To install the ledger-native bindings on macOS or Linux:</p>
+					
+					<ol>
+						<li><a href="https://github.com/guldcoin/ledger-native/archive/master.zip">Download</a> (or clone, if you're handy with <code>git</code>) the <a href="https://github.com/guldcoin/ledger-native">ledger-native</a> repository into your home directory, or another location if you'd prefer.</li>
+
+						<br><p><strong>*</strong> The next step assumes you placed the ledger-native files into your home directory. Adjust accordingly if you placed them elsewhere.</p><br>
+
+						<li>Open a shell window (such as Terminal on macOS) and issue the following commands:</li>
+
+						<br><pre>cd ledger-native
+./install_host.sh</pre><br>
+
+						<li>To uninstall the host, run <code>./uninstall_host.sh</code></li>
+					</ol>
+
+						<br><h5>On Windows</h5><br>
+
+						<p>To install the ledger-native bindings on Windows:</p>
+					
+					<ol>
+						<li><a href="https://github.com/guldcoin/ledger-native/archive/master.zip">Download</a> (or clone, if you're handy with <code>git</code>) the <a href="https://github.com/guldcoin/ledger-native">ledger-native</a> repository into your home directory, or another location if you'd prefer.</li>
+
+							<br><li>In an Explorer window, navigate to the <code>ledger-native</code> folder.</li>
+
+							<br><li>Double-click the <code>install_host.bat</code> script to install the native messaging host for the current Windows user.</li>
+					</ol>
+					
+					<br><h4>Install the Guld Wallet Extension</h4><br>
+					
+						<p>The extension will soon be available from the Chrome Web Store.</p>
+					
+						<!-- <button type="button" class="btn btn-outline-primary" onclick="chrome.webstore.install()">Add to Chrome</button><br><br> -->
+					
+						<p>To install the extension directly from the Github repository, download <a href="https://github.com/guldcoin/guld-chrome/archive/master.zip">guld-chrome</a> or run <code>git clone https://github.com/guldcoin/guld-chrome.git</code> to clone the repository.</p> 
+					
+						<p>Then, in your browser:</p>
+					
+						<ol>
+							<li>Navigate to <a href="chrome://extensions">chrome://extensions</a>.</li>
+
+							<li>Turn on the Developer Mode switch in the upper-right corner.</li>
+
+							<li>Click the <code>Load Unpacked</code> button.</li>
+
+							<li>Navigate to the location you downloaded or cloned the repository, and click Select.</li>
+						</ol>
+
+						<p>The Guld Wallet extension's icon will show up on the Chrome toolbar, with a "WAIT" overlay. After a few minutes, the extension will finish its initial setup, and will be ready to use. The Guld Games extension is ready to use as soon as it's installed.</p>					
+
+					<br><h4>Setting up Guld Wallet</h4><br>
+					
+						<p>Once the extension has finished its initial setup, the "WAIT" overlay on its icon will disappear.</p>
+
+						<p>Click the Guld Wallet icon on the Chrome toolbar to open the interface in a new tab. You'll be prompted to enter your GitHub credentials.</p>
+
+						<p><strong>*A GitHub account is required to use Guld Wallet. If you don't log into your account, the extension will not work.</strong></p>
+
+						<p>On the welcome screen, you can either <strong>generate</strong> a Guld identity, or <strong>import</strong> an existing identity. Identities are tied to PGP keys, so this step is actually generating a (or importing an existing, in the case of existing Guld users) PGP key.</p>
+
+						<br><p>To <strong>generate a new Guld identity</strong> and PGP key:</p>
+						<ol>
+							<li>Select the "generate" radio button.</li>
+
+							<li>Choose a Guld username.</li>
+
+							<li>Optionally, enter your name.</li>
+
+							<li>Enter your email address.</li>
+							<span>Note that this email address will be publicly available in the ledger. Don't use an address you don't want to be made public.</span>
+
+							<li>Enter a strong passphrase for the new PGP key, and confirm it.</li>
+							<span>Keep your passphrase stored securely. There is no way to recover a lost passphrase.</span>
+
+							<li>Click <strong>Create</strong> to create your new Guld identity and PGP key.</li>
+						</ol>	
+
+						<br><p>To <strong>import an existing Guld identity</strong> and PGP key:</p>
+						<ol>
+							<li>Select the "import" radio button.</li>
+
+							<li>Export the private key you used to register your Guld Identity from your preferred PGP key manager.</li>
+
+							<li>Copy and paste the exported private key into the "ASCII Armored Private Key" box.</li>
+
+							<li>Enter your existing Guld username.</li>
+
+							<li>Enter the passphrase for the private PGP key.</li>
+
+							<li>Click <strong>Import</strong> to import your private key and Guld Identity</li>
+						</ol>
+						
+						<span><strong>*</strong>If you get an error when trying to use your existing Guld username, check the "Expert Mode" box and try the import again.</span>					
+														
+					</div>
+	            </div>
+            </div><!-- /.container -->
+        </section><!-- /.section-gw -->
 
         <section id="section-team" class="section-wrapper team">
             <div class="container">
@@ -110,7 +301,7 @@
 
                     <div class="col-sm-6 col-md-3">
                         <figure class="thumbnail">
-                            <a target="_blank" href="https://iramiller.com/">
+                            <a href="https://iramiller.com">
                                 <img src="img/team/ira-miller.jpg" class="img-responsive" alt="Image">
                                 <figcaption class="caption text-center">
                                     <h3>Ira Miller
@@ -125,7 +316,7 @@
 
                     <div class="col-sm-6 col-md-3">
                         <figure class="thumbnail">
-                            <a target="_blank" href="https://tigoctm.com">
+                            <a href="https://tigoctm.com">
                                 <img src="img/team/cindy.jpeg" class="img-responsive" alt="Image">
                                 <figcaption class="caption text-center">
                                     <h3>Cindy Zimmerman
@@ -139,7 +330,7 @@
 
                     <div class="col-sm-6 col-md-3">
                         <figure class="thumbnail">
-                            <a target="_blank" href="https://chrissmejia.com">
+                            <a href="https://chrissmejia.com">
                                 <img src="img/team/chriss.jpg" class="img-responsive" alt="Image">
                                 <figcaption class="caption text-center">
                                     <h3>Chriss Mejía
@@ -153,7 +344,7 @@
 
                     <div class="col-sm-6 col-md-3">
                         <figure class="thumbnail">
-                            <a target="_blank" href="#">
+                            <a href="#">
                                 <img src="img/team/fernando.jpg" class="img-responsive" alt="Image">
                                 <figcaption class="caption text-center">
                                     <h3>Fernando Dreyfus
@@ -269,8 +460,8 @@
                                 <img src="img/team/luis.jpg" class="img-responsive" alt="Image">
                                 <figcaption class="caption text-center">
                                     <h3>Luis Robletto
-                                        <small class="title">Chaufer/Assistant</small>
-                                        <small class="website">Chaufer/Assistant</small>
+                                        <small class="title">General Support</small>
+                                        <small class="website">General Support</small>
                                     </h3>
                                 </figcaption>
                             </a>
@@ -280,11 +471,11 @@
                     <div class="col-sm-6 col-md-3">
                         <figure class="thumbnail">
                             <a href="#">
-                                <img src="img/team/who.svg" class="img-responsive" alt="Image">
+                                <img src="img/team/steven.jpg" class="img-responsive" alt="Image">
                                 <figcaption class="caption text-center">
                                     <h3>Steven Haddadian
-                                        <small class="title">Community Builder</small>
-                                        <small class="website">Community Builder</small>
+                                        <small class="title">Strategic Growth</small>
+                                        <small class="website">Strategic Growth</small>
                                     </h3>
                                 </figcaption>
                             </a>
@@ -293,7 +484,7 @@
 
                     <div class="col-sm-6 col-md-3">
                         <figure class="thumbnail">
-                            <a target="_blank" href="https://bitt.com">
+                            <a href="https://bitt.com">
                                 <img src="img/team/Gabriel_Abed.jpg" class="img-responsive" alt="Image">
                                 <figcaption class="caption text-center">
                                     <h3>Gabriel Abed
@@ -304,14 +495,26 @@
                             </a>
                         </figure>
                     </div>
-
+                    
+                    <div class="col-sm-6 col-md-3">
+                        <figure class="thumbnail">
+                            <a href="https://riomyers.com">
+                                <img src="img/team/rio.jpg" class="img-responsive" alt="Image">
+                                <figcaption class="caption text-center">
+                                    <h3>Rio Myers
+                                        <small class="title">UI Developer</small>
+                                        <small class="website">riomyers.com</small>
+                                    </h3>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </div>
                 </div>
 
             </div>
             <!-- /.container -->
         </section>
         <!-- .team -->
-
 
         <section id="section-network" class="section-wrapper gray-bg">
             <div class="container">
@@ -326,15 +529,18 @@
 
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <a target="_blank" href="https://drprx.com/">
+                        <a href="https://drprx.com/">
                             <img src="img/network/drprx.svg" alt="Dr Prx">
                         </a>
-                        <a target="_blank" href="https://tigoctm.com/">
+                        <a href="https://tigoctm.com/">
                             <img src="img/network/tigoctm.svg" alt="TigoCTM">
                         </a>
-                        <a target="_blank" href="http://raadyx.com/">
+                        <a href="http://raadyx.com/">
                             <img src="img/network/raadyx.svg" alt="Raadyx">
                         </a>
+                        <a href="https://guld.gg">
+                            <img src="img/network/gg.svg" alt="Guld Games">
+                        </a>                        
                     </div>
                 </div>
 
@@ -367,17 +573,14 @@
                         </a>
                     </div>
                 </div>
-                </br>
-                </br>
+                <br>
+                <br>
                 <div class="row">
                     <div class="list-group">
+                        <a href="http://zimmi.slides.com/isysd/human-smart-contracts" class="button list-group-item list-group-item-action">Human Smart Contracts
+                            <span class="badge badge-primary badge-pill float-right">html presentation</span>
+                        </a>
                         <a href="http://zimmi.slides.com/isysd/guld-ledger" class="button list-group-item list-group-item-action">guld Ledger
-                            <span class="badge badge-primary badge-pill float-right">html presentation</span>
-                        </a>
-                        <a href="http://zimmi.slides.com/isysd/consensus-governance-7" class="button list-group-item list-group-item-action">guldOS Seminar 1
-                            <span class="badge badge-primary badge-pill float-right">html presentation</span>
-                        </a>
-                        <a href="http://zimmi.slides.com/isysd/ico-whales" class="button list-group-item list-group-item-action">ICO Whales
                             <span class="badge badge-primary badge-pill float-right">html presentation</span>
                         </a>
                         <a href="http://zimmi.slides.com/isysd/platos-cave-screen" class="button list-group-item list-group-item-action">Plato's Cave Screen
@@ -393,9 +596,6 @@
                             <span class="badge badge-primary badge-pill float-right">html presentation</span>
                         </a>
                         <a href="http://zimmi.slides.com/isysd/p2pre-nup" class="button list-group-item list-group-item-action">P2Pre-nup
-                            <span class="badge badge-primary badge-pill float-right">html presentation</span>
-                        </a>
-                        <a href="http://zimmi.slides.com/isysd/auto-generated-model-driven-apps" class="button list-group-item list-group-item-action">Auto-Generated, Model Driven Apps
                             <span class="badge badge-primary badge-pill float-right">html presentation</span>
                         </a>
                     </div>
@@ -417,7 +617,6 @@
         </section>
         <!-- contact-section -->
 
-
         <footer class="footer">
             <div class="row">
                 <div class="col-8">
@@ -426,17 +625,17 @@
                 <div class="col-4">
                     <ul class="list-inline">
                         <li class="list-inline-item">
-                            <a target="_blank" href="https://t.me/guldblocktree">
+                            <a href="https://t.me/guldblocktree">
                                 <i class="fab fa-telegram-plane"></i>
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a target="_blank" href="https://www.facebook.com/guldblocktree/">
+                            <a href="https://www.facebook.com/guldblocktree">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a target="_blank" href="https://twitter.com/guldcoin">
+                            <a href="https://twitter.com/guldcoin">
                                 <i class="fab fa-twitter"></i>
                             </a>
                         </li>
@@ -449,29 +648,21 @@
 
     <!-- jquery -->
     <script src="js/jquery-2.1.4.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-        crossorigin="anonymous"></script>
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!-- javascript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>    
     <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
-
-    <script src="js/scripts.js"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="js/script.js"></script>
+    <!-- global site tag (gtag.js) - google analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114107562-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-
         function gtag() {
             dataLayer.push(arguments);
         }
         gtag('js', new Date());
-
         gtag('config', 'UA-114107562-1');
     </script>
 </body>
-
 </html>
