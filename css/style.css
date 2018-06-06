@@ -91,6 +91,7 @@ span.typed-cursor {
 
 .navbar {
     background: url("../img/bg.png") no-repeat center center fixed;
+    background-color: #000;
 }
 
 .navbar-light .navbar-toggler {
