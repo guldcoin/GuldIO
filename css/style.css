@@ -16,9 +16,7 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: 300;
 }
 
-h3 {
-    margin-bottom: 1rem;
-}
+h3 { margin-bottom: 1rem;}
 
 .btn-primary {
     color: #fff;
@@ -26,17 +24,16 @@ h3 {
     border-color: #3b4a5a;
 }
 
-a {
-    color: #274175;
-}
+a {color: #274175;}
+
 a:hover{text-decoration: none;}
 
-#section-gw a {
+#section-about a, #section-gw a {
 	color: #000;
 	font-weight: bold;
 }
 
-#section-gw a:hover {color: #274175;}
+#section-about a, #section-gw a:hover {color: #274175;}
 
 #section-gw span{color: darkblue;}
 
