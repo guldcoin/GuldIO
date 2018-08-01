@@ -2,8 +2,8 @@
 Template Name: GuldIO
 Description: HTML5 / CSS3 One Page
 Version: 1.0
-Author: guld & Rio Myers
-Website: https://chrissmejia.com & https://riomyers.com
+Author: Guld & Rio Myers
+Website: https://riomyers.com
 */
 body {
     font-family: 'Roboto', sans-serif;
@@ -24,16 +24,19 @@ h3 { margin-bottom: 1rem;}
     border-color: #3b4a5a;
 }
 
-a {color: #274175;}
+a {
+	white-space: normal;
+	color: #274175;
+}
 
 a:hover{text-decoration: none;}
 
-#section-about a, #section-gw a {
+#section-about a, #section-gw a, #section-erc20 a {
 	color: #000;
 	font-weight: bold;
 }
 
-#section-about a, #section-gw a:hover {color: #274175;}
+#section-about a:hover, #section-gw a:hover, #section-erc20 a:hover {color: #274175;}
 
 #section-gw span{color: darkblue;}
 
@@ -42,6 +45,15 @@ a:hover{text-decoration: none;}
 .btn:focus{box-shadow: none;}
 
 .mf{margin-top: 7px;}
+
+.limitWidth{
+	max-width: 70%;
+	margin: 0 auto;
+}
+
+.marginize{
+	padding: 0 2em 0 2em !important;
+}
 
 pre {
 	background-color: #f7f7f7;
@@ -58,6 +70,7 @@ code{
 	background-color: #f7f7f7;
 	padding: .2em;	
 }
+
 
 span.typed-cursor {
     font-size: 4.4rem;
@@ -85,6 +98,10 @@ span.typed-cursor {
 	height: 10rem;
     margin: 2rem 0 1.4rem;
 }
+
+.gulderc20{font-size: 1.73em;}
+
+.enhance{font-size: 2em;}
 
 .navbar {
     background: url("../img/bg.png") no-repeat center center fixed;
@@ -351,12 +368,23 @@ section {
     display: block;
 }
 
+/*
 .team .thumbnail .website .title {
     display: block;
 }
 
 .team .thumbnail:hover .title {
     display: none;
+}
+*/
+
+.teamsocial{
+	position: absolute;
+	left: 40%;
+	transform: translate(-40%);
+	max-width: 70%; 
+	margin: auto; 
+	display: flex;
 }
 
 .thumbnail img {
@@ -520,13 +548,13 @@ section {
 }
 
 .footer ul {
-    margin: 0;
-    float: right;
+	margin-top: 1em;
+	text-align: center;
 }
 
-.footer .row {
-    margin: 0;
-}
+.copytext{text-align: center;}
+
+.footer .row {margin: 0;}
 
 :root {
     --msg-content-height: 16.75rem;
@@ -844,6 +872,13 @@ section {
 }
 
 @media screen and (max-width: 48em) {
+	.limitWidth{max-width: 80%;}
+	#social a {
+    	font-size: 1rem;
+		width: 2.5rem;
+		height: 2.5rem;
+		margin: .5rem;
+    }
 	#section-network img {margin: 2rem;}
     #read_seminar {
         margin-top: 3rem;
@@ -863,6 +898,14 @@ section {
 }
 
 @media screen and (max-width: 28rem) {
+	.limitWidth{max-width: 90%;}
+	#social a {
+    	font-size: 1rem;
+		width: 2.5rem;
+		height: 2.5rem;
+		margin: .2rem;
+		margin-bottom: .5em;
+    }	
     .header .text {
         font-size: 2rem;
     }
@@ -887,6 +930,7 @@ section {
 }
 
 @media screen and (max-width: 23.4rem) {
+	.limitWidth{max-width: 100%;}
     .seminar-countdown .time {
         height: 70px;
         width: 48px;
