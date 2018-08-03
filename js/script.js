@@ -3,7 +3,6 @@ jQuery(function ($) {
     // --------------------------------------------------------------------
     // jQuery One Page Scrolling & Link Handling
     // --------------------------------------------------------------------
-		// Select all links with hashes
 		  $("a").on('click', function(event) {
 		  	if (this.hash !== "") {
 		      event.preventDefault();
@@ -28,5 +27,4 @@ jQuery(function ($) {
 		$('.navbar-nav>li>a,nav a').on('click', function(){
 			$('.navbar-collapse').collapse('hide');
 		});
-
 }); // JQuery end
