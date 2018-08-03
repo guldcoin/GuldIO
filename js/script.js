@@ -4,25 +4,23 @@ jQuery(function ($) {
     // jQuery One Page Scrolling & Link Handling
     // --------------------------------------------------------------------
 		// Select all links with hashes
-		$('a[href*=#]:not([href=#])').on('click', function(){
-		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-		        || location.hostname == this.hostname) {
-		        var target = $(this.hash);
-		        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-		           if (target.length) {
-		             $('html,body').animate({
-		                 scrollTop: target.offset().top - 20 //scroll position fix
-		            }, 737);
-		            return false;
-		        }
+		  $("a").on('click', function(event) {
+		  	if (this.hash !== "") {
+		      event.preventDefault();
+		      var hash = this.hash;
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 737, function(){
+		        window.location.hash = hash;
+		      });
 		    }
-		});
-				
+		  });
+						
 		// Open all external links in new window 
 		$('a').filter(function () {return this.hostname != window.location.hostname;}).attr('target', '_blank');
 		
 		// No event for empty links
-		$('a[href=#]').on('click', function(){return false;});
+		$('a[href=\\#]').on('click', function(){return false;});
 			
     // --------------------------------------------------------------------
     // Closes the Responsive Menu on Menu Item Click
