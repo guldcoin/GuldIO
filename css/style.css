@@ -88,8 +88,6 @@ span.typed-cursor {
 	height: 100vh;
 	min-height: 100%;
     width: 100%;
-    z-index: 9;
-    margin-top: -4rem;
     background: url("../img/bg.png") no-repeat center center fixed;
     background-color: #000;
 }
