@@ -3,17 +3,17 @@ jQuery(function ($) {
     // --------------------------------------------------------------------
     // jQuery One Page Scrolling & Link Handling
     // --------------------------------------------------------------------
-		  $("a").on('click', function(event) {
-		  	if (this.hash !== "") {
-		      event.preventDefault();
-		      var hash = this.hash;
-		      $('html, body').animate({
-		        scrollTop: $(hash).offset().top
-		      }, 737, function(){
-		        window.location.hash = hash;
-		      });
-		    }
-		  });
+		$("a").on('click', function(e) {
+		  if (this.hash !== "") {
+		     e.preventDefault();
+		     var h = this.hash;
+		     $('html, body').animate({
+		       scrollTop: $(h).offset().top
+		     }, 737, function(){
+		       window.location.hash = h;
+		     });
+		   }
+		});
 						
 		// Open all external links in new window 
 		$('a').filter(function () {return this.hostname != window.location.hostname;}).attr('target', '_blank');
