@@ -3,18 +3,21 @@ jQuery(function ($) {
     // --------------------------------------------------------------------
     // jQuery One Page Scrolling & Link Handling
     // --------------------------------------------------------------------
-		$("a").on('click', function(e) {
-		  if (this.hash !== "") {
-		     e.preventDefault();
-		     var h = this.hash;
-		     $('html, body').animate({
-		       scrollTop: $(h).offset().top
-		     }, 737, function(){
-		       window.location.hash = h;
-		     });
-		   }
+		// Select all links with hashes
+		$('a[href*=\\#]:not([href=\\#])').on('click', function(){
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+		        || location.hostname == this.hostname) {
+		        var target = $(this.hash);
+		        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		           if (target.length) {
+		             $('html,body').animate({
+		                 scrollTop: target.offset().top - 20 //scroll position fix
+		            }, 737);
+		            return false;
+		        }
+		    }
 		});
-						
+				
 		// Open all external links in new window 
 		$('a').filter(function () {return this.hostname != window.location.hostname;}).attr('target', '_blank');
 		
@@ -27,4 +30,5 @@ jQuery(function ($) {
 		$('.navbar-nav>li>a,nav a').on('click', function(){
 			$('.navbar-collapse').collapse('hide');
 		});
+
 }); // JQuery end
