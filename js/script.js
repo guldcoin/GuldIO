@@ -179,15 +179,15 @@ function BannerMessages(options) {
 var messages = [
   {
       id: 1,
-      title: 'Announcing the GULD Airdrop!<br><br>',
-      message: "Welcome guld users, open source collaborators and new members of the guld blocktree! Please read our current <a href='#'>announcement</a> for recent launches and updates to the guld network.<br><br> Need help with your airdrop claim? - Join our <a href='https://t.me/guldblocktree'>telegram group</a> for support.<br><br>",
+      title: 'guld Releases, Project Updates and Airdrop Announcement!<br><br>',
+      message: "Welcome guld users, open source collaborators and new members of the guld blocktree! Please read our current <a href='https://www.reddit.com/r/guldblocktree/comments/96a7mg/guld_releases_project_updates_and_airdrop'>announcement</a> for recent launches and updates to the guld network.<br><br> Need help with your airdrop claim? - Join our <a href='https://t.me/guldblocktree'>telegram group</a> for support.<br><br>",
       cssClass: "success",
-      ctaText: 'Claim Your GULD',
-      ctaLink: 'https://t.me/guldblocktree',
+      ctaText: 'Read More',
+      ctaLink: 'https://www.reddit.com/r/guldblocktree/comments/96a7mg/guld_releases_project_updates_and_airdrop',
       active: true,
       timeStart: 'Aug 7, 2018 19:37:37',
       timeUpdated: 'Aug 7, 2018 19:37:37',
-      timeEnd: 'Sep 1, 2018 00:00:00',
+      timeEnd: 'Oct 1, 2018 00:00:00',
       timeCached: null,
       hidden: false
   }/*
@@ -214,5 +214,5 @@ var messages = [
 var banners = new BannerMessages({
   messages: messages,
   target: 'site-messages'
-})
+});
 */
