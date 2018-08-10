@@ -209,7 +209,7 @@ var messages = [
 */
 ];
 
-//REMOVE /*...*/ COMMENTS BELOW TO SHOW AIRDROP MESSAGE - !!!Make sure announcement href in message is linked to new Reddit post/announcement page!!!
+// Comment out code below to hide - Uncomment code to display banner
 var banners = new BannerMessages({
   messages: messages,
   target: 'site-messages'
