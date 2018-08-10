@@ -210,9 +210,7 @@ var messages = [
 ];
 
 //REMOVE /*...*/ COMMENTS BELOW TO SHOW AIRDROP MESSAGE - !!!Make sure announcement href in message is linked to new Reddit post/announcement page!!!
-/*
 var banners = new BannerMessages({
   messages: messages,
   target: 'site-messages'
 });
-*/
